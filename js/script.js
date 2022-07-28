@@ -109,6 +109,9 @@ let totalConDescuento = total / 2;
 alert('Por ser un dia de descuento su entrada sera de ' + totalConDescuento)
 */
 
+//codigo de prueba
+//let precioDescuento = (precioEntrada - descuento) * cantidadDeEntradas
+
 //continuar o finalizar compra
 
 
@@ -126,10 +129,10 @@ switch (cuponDescuento) {
         } else {
             alert('Cupón no valido');
         }
-    case '2':
-        alert('Hasta luego')
-        break;
-    default:
-        break;
+        case '2':
+            alert('Hasta luego')
+            break;
+        default:
+            break;
 
 }
