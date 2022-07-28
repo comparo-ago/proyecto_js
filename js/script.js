@@ -2,6 +2,9 @@ let precioEntrada = '1300'
 let usuario = 'matias'
 let contraseña = '1234'
 let ingresar = false
+let cuponMiercoles = 'miercoles'
+let cupon = false
+let descuento = '500'
 
 
 alert('Bienvenido/a a nuestro sitio de compra de entradas')
@@ -31,36 +34,36 @@ for (let i = 2; i >= 0; i--) {
 //array
 
 const cartelera = [{
-    titulo: "DC Liga de Supermarscotas",
-    anio: 2022,
-    genero: "animacion",
-    duracion: "106min",
-},
-{
-    titulo: "Elvis",
-    anio: 2022,
-    genero: "Biografia",
-    duracion: "160min",
-},
-{
-    titulo: "La habitación del horror",
-    anio: 2022,
-    genero: "Terror",
-    duracion: "98min",
-},
-{
-    titulo: "Jurassic world dominio",
-    anio: 2022,
-    genero: "Aventuras",
-    duracion: "147min",
-}
+        titulo: "DC Liga de Supermarscotas",
+        anio: 2022,
+        genero: "animacion",
+        duracion: "106min",
+    },
+    {
+        titulo: "Elvis",
+        anio: 2022,
+        genero: "Biografia",
+        duracion: "160min",
+    },
+    {
+        titulo: "La habitación del horror",
+        anio: 2022,
+        genero: "Terror",
+        duracion: "98min",
+    },
+    {
+        titulo: "Jurassic world dominio",
+        anio: 2022,
+        genero: "Aventuras",
+        duracion: "147min",
+    }
 ]
 
 console.log(cartelera);
 alert("Entradas disponibles")
 
-for ( i of cartelera){
-alert(i.titulo + " " + i.anio + " " + i.genero + " " + i.duracion)
+for (i of cartelera) {
+    alert(i.titulo + " " + i.anio + " " + i.genero + " " + i.duracion)
 }
 
 //fin del array
@@ -101,22 +104,30 @@ let cantidadDeEntradas = prompt('Por favor ingrese la cantidad de entradas que d
 let total = precioEntrada * cantidadDeEntradas;
 alert('El monto total es de ' + total);
 
-
+/*
 let totalConDescuento = total / 2;
 alert('Por ser un dia de descuento su entrada sera de ' + totalConDescuento)
-
+*/
 
 //continuar o finalizar compra
 
 
-let finalizarCompra = prompt('¿Desea fenalizar su compra?: \n1 - si. : \n2 - no.')
+let cuponDescuento = prompt('¿Tiene algun cupon de descuento?: \n1 - si. : \n2 - no.')
 continuar = true
-switch (finalizarCompra) {
+switch (cuponDescuento) {
     case '1':
-        alert('Hasta luego')
-        break;
+        let cuponDeDescuento = prompt('Ingrese el cupón.');
+        if (cuponDeDescuento === cuponMiercoles) {
+            alert('Su cupón es valido');
+            cupon = true;
+            let precioFinal = total - descuento
+            alert('El monto a abonar es de ' + precioFinal)
+            break;
+        } else {
+            alert('Cupón no valido');
+        }
     case '2':
-
+        alert('Hasta luego')
         break;
     default:
         break;
