@@ -172,7 +172,7 @@ switch (proximamente) {
         let fechaFiltrada;
         peliculaFiltrada = prompt('Ingrese el nombre de la pelicula');
         const peliFiltrada = proximosEstrenos.filter(peli => peli.peliculaNueva.includes(peliculaFiltrada));
-        alert('La pelicula ' + peliculaFiltrada + ' proximamente en cine Hits')
+        alert('La pelicula ' + peliFiltrada + ' proximamente en cine Hits')
 
         break;
     case '2':
