@@ -5,6 +5,7 @@ let ingresar = false
 let cuponMiercoles = 'miercoles'
 let cupon = false
 let descuento = '500'
+let prox = false
 
 
 alert('Bienvenido/a a nuestro sitio de compra de entradas')
@@ -135,4 +136,48 @@ switch (cuponDescuento) {
         default:
             break;
 
+}
+
+//array nuevos estrenos
+
+const proximosEstrenos = [{
+    peliculaNueva: 'El perro samurai',
+    fechaDeEstreno: '11/08/2022',
+    duracion: '90min',
+    genero: 'animada',
+}, {
+    peliculaNueva: '30 noches con mi ex',
+    fechaDeEstreno: '11/08/2022',
+    duracion: '90min',
+    genero: 'comedia',
+}, {
+    peliculaNueva: 'After amor infinito',
+    fechaDeEstreno: '25/08/2022',
+    duracion: '90min',
+    genero: 'romance',
+}, {
+    peliculaNueva: 'Un crimen Argentino',
+    fechaDeEstreno: '28/08/2022',
+    duracion: '104min',
+    genero: 'drama',
+}]
+
+
+//fin del array
+
+proximamente = prompt('¿Desea saber nuestros proximos estrenos?: \n1 - si. : \n2 - no. ');
+switch (proximamente) {
+    case '1':
+        let peliculaFiltrada;
+        let fechaFiltrada;
+        peliculaFiltrada = prompt('Ingrese el nombre de la pelicula');
+        const peliFiltrada = proximosEstrenos.filter(peli => peli.peliculaNueva.includes(peliculaFiltrada));
+        alert('La pelicula ' + peliculaFiltrada + ' proximamente en cine Hits')
+
+        break;
+    case '2':
+        alert('De acuerdo, hasta luego')
+        break;
+    default:
+        break;
 }
