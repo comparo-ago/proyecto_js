@@ -13,14 +13,14 @@ let preguntaRegistro = alert('A continuación inicie sesión');
 
 
 for (let i = 2; i >= 0; i--) {
-    let usuarioIngresado = prompt('Escribe tu nombre de usuario. Tienes ' + (i + 1) + 'intentos.');
-    let contraseñaIngresada = prompt('Escriba su contraseña. Tienes ' + (i + 1) + 'intentos.')
+    let usuarioIngresado = prompt('Escribe tu nombre de usuario. Tienes ' + (i + 1) + ' intentos.');
+    let contraseñaIngresada = prompt('Escriba su contraseña. Tienes ' + (i + 1) + ' intentos.')
     if (usuarioIngresado === usuario) {
         alert('Bienvenido ' + usuario);
         ingresar = true;
         break;
     } else {
-        alert('Te queda' + i + 'intentos.');
+        alert('Te queda ' + i + ' intentos.');
     }
 
     if (contraseñaIngresada === contraseña) {
@@ -28,7 +28,7 @@ for (let i = 2; i >= 0; i--) {
         ingresar = true;
         break;
     } else {
-        alert('Te queda' + i + 'intentos.');
+        alert('Te queda ' + i + ' intentos.');
     }
 }
 
@@ -131,7 +131,7 @@ switch (cuponDescuento) {
             alert('Cupón no valido');
         }
         case '2':
-            alert('Hasta luego')
+            alert('Su monto a abonar será de ' + total);
             break;
         default:
             break;
@@ -169,11 +169,9 @@ proximamente = prompt('¿Desea saber nuestros proximos estrenos?: \n1 - si. : \n
 switch (proximamente) {
     case '1':
         let peliculaFiltrada;
-        let fechaFiltrada;
         peliculaFiltrada = prompt('Ingrese el nombre de la pelicula');
         const peliFiltrada = proximosEstrenos.filter(peli => peli.peliculaNueva.includes(peliculaFiltrada));
         alert('La pelicula ' + peliFiltrada + ' proximamente en cine Hits')
-
         break;
     case '2':
         alert('De acuerdo, hasta luego')
