@@ -7,7 +7,6 @@ let cupon = false
 let descuento = '500'
 let prox = false
 
-
 alert('Bienvenido/a a nuestro sitio de compra de entradas')
 let preguntaRegistro = alert('A continuación inicie sesión');
 
@@ -31,6 +30,7 @@ for (let i = 2; i >= 0; i--) {
         alert('Te queda ' + i + ' intentos.');
     }
 }
+
 
 //array
 
@@ -67,12 +67,15 @@ for (i of cartelera) {
     alert(i.titulo + " " + i.anio + " " + i.genero + " " + i.duracion)
 }
 
+
+
 //fin del array
 
 
 
 if (ingresar) {
     let primerPregunta = prompt('¿Para que función desea comprar entrada?: \n1 - DC Liga de Supermarscotas.  \n2 - Elvis. \n3 - La habitación del horror. \n4 - Jurassic world dominio.');
+
 
     switch (primerPregunta) {
         case '1':
@@ -179,3 +182,22 @@ switch (proximamente) {
     default:
         break;
 }
+
+
+let nuevoMensaje = document.createElement('h3');
+nuevoMensaje.innerHTML = '<h3>Gracias por su compra, vuelva pronto!!</h3>';
+document.body.append(nuevoMensaje);
+
+
+let atencionAlCliente = document.createElement('h3');
+atencionAlCliente.innerHTML = '<h3>Nuestro cine no se responsabiliza por daños o perdidas</h3>';
+document.body.append(atencionAlCliente);
+
+
+let atencionCliente = document.createElement ('p');
+atencionCliente.innerHTML = '<p>Por inconvenientes con la compra o reserva de su entrada, contactactarse al: 0800-666-0575';
+document.body.append(atencionCliente);
+
+let horarioDeAtencion = document.createElement ('p');
+horarioDeAtencion.innerHTML = '<p>(Horario de atención de 12hs a 23hs)</p>'
+document.body.append(horarioDeAtencion);
