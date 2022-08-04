@@ -1,3 +1,4 @@
+/*
 * {
     margin: 0;
     padding: 0;
@@ -32,20 +33,7 @@ h2 {
     text-transform: uppercase;
 }
 
-.cartelera {
-    background-color: white;
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 20px;
-    padding: 5px;
-    width: 190px;
-    height: 300px;
-    border-radius: 10px;
-    text-decoration: none;
-}
+
 
 div {
     background-color: white;
@@ -67,4 +55,221 @@ div {
     margin: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-transform: uppercase;
+}
+
+*/
+.cartelera {
+    background-color: white;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+    width: 190px;
+    height: 300px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/*login*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bodylogin {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/sala.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.contenedor {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition:  all .5s ease-out;
+    margin-top: 40px;
+}
+
+.bienvenido {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 80px;
+}
+
+.mensaje {
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.mensaje h2 {
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.mensaje button {
+    padding: 10px;
+    font-weight: 400;
+    background-color:#6464f8 ;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 32px;
+    transition: all .3s ease-in;
+    color: #fff;
+}
+
+.mensaje button:hover {
+    background-color: #6464f8;
+}
+
+/*formulario1*/
+.formulario1 {
+    width: 400px;
+    height: 380px;
+    padding: 15px;
+    margin: 2px;
+    margin-top: 50px;
+    background-color: rgb(51, 51, 51, 0.602);
+    text-align: center;
+    border-radius: 25px;
+}
+
+.formulario1 input {
+    width: 250px;
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    justify-content: center;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.formulario1 input[type="button"] {
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #222;
+}
+
+
+/*fin de formulario1*/
+.formulario2 {
+    width: 360px;
+    height: 340px;
+    padding: 15px;
+    margin: 2px;
+    margin-top: 50px;
+    background-color: rgb(51, 51, 51, 0.602);
+    text-align: center;
+    border-radius: 25px;
+}
+
+.formulario2 input {
+    width: 250px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    justify-content: center;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.formulario2 input[type="button"] {
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #222;
+}
+.crear-cuenta{
+    margin:20px;
+}
+.caja1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.caja2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sign-in.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign-up.active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.footerlogin{
+    background-color: rgb(31, 30, 30);
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.footerlogin footer{
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
 }

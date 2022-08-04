@@ -32,6 +32,7 @@ for (let i = 2; i >= 0; i--) {
 }
 
 
+
 //array
 
 const cartelera = [{
@@ -61,13 +62,14 @@ const cartelera = [{
 ]
 
 console.log(cartelera);
-alert("Entradas disponibles")
+//alert("Entradas disponibles")
 
+/*
 for (i of cartelera) {
     alert(i.titulo + " " + i.anio + " " + i.genero + " " + i.duracion)
 }
 
-
+*/
 
 //fin del array
 
@@ -107,6 +109,10 @@ let cantidadDeEntradas = prompt('Por favor ingrese la cantidad de entradas que d
 
 let total = precioEntrada * cantidadDeEntradas;
 alert('El monto total es de ' + total);
+
+
+
+
 
 /*
 let totalConDescuento = total / 2;
@@ -194,10 +200,11 @@ atencionAlCliente.innerHTML = '<h3>Nuestro cine no se responsabiliza por daños 
 document.body.append(atencionAlCliente);
 
 
-let atencionCliente = document.createElement ('p');
-atencionCliente.innerHTML = '<p>Por inconvenientes con la compra o reserva de su entrada, contactactarse al: 0800-666-0575';
+let atencionCliente = document.createElement('p');
+atencionCliente.innerHTML = '<p>Por inconvenientes con la compra o reserva de su entrada, contactactarse al: 0800-666-0575</p>';
 document.body.append(atencionCliente);
 
-let horarioDeAtencion = document.createElement ('p');
+let horarioDeAtencion = document.createElement('p');
 horarioDeAtencion.innerHTML = '<p>(Horario de atención de 12hs a 23hs)</p>'
 document.body.append(horarioDeAtencion);
+
