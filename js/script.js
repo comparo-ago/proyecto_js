@@ -7,10 +7,10 @@ let cupon = false
 let descuento = '500'
 let prox = false
 
-alert('Bienvenido/a a nuestro sitio de compra de entradas')
-let preguntaRegistro = alert('A continuación inicie sesión');
+//alert('Bienvenido/a a nuestro sitio de compra de entradas')
+//let preguntaRegistro = alert('A continuación inicie sesión');
 
-
+/*
 for (let i = 2; i >= 0; i--) {
     let usuarioIngresado = prompt('Escribe tu nombre de usuario. Tienes ' + (i + 1) + ' intentos.');
     let contraseñaIngresada = prompt('Escriba su contraseña. Tienes ' + (i + 1) + ' intentos.')
@@ -31,7 +31,7 @@ for (let i = 2; i >= 0; i--) {
     }
 }
 
-
+*/
 
 //array
 
@@ -103,12 +103,12 @@ if (ingresar) {
 
 }
 
-let cantidadDeEntradas = prompt('Por favor ingrese la cantidad de entradas que desea comprar')
+//let cantidadDeEntradas = prompt('Por favor ingrese la cantidad de entradas que desea comprar')
 
 //calculo
 
-let total = precioEntrada * cantidadDeEntradas;
-alert('El monto total es de ' + total);
+//let total = precioEntrada * cantidadDeEntradas;
+//alert('El monto total es de ' + total);
 
 
 
@@ -125,7 +125,7 @@ alert('Por ser un dia de descuento su entrada sera de ' + totalConDescuento)
 //continuar o finalizar compra
 
 
-let cuponDescuento = prompt('¿Tiene algun cupon de descuento?: \n1 - si. : \n2 - no.')
+//let cuponDescuento = prompt('¿Tiene algun cupon de descuento?: \n1 - si. : \n2 - no.')
 continuar = true
 switch (cuponDescuento) {
     case '1':
