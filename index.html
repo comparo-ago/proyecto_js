@@ -47,23 +47,35 @@
         </header>
     </div>
     <div>
-<!--cartelera principal-->
+        <!--carrusel-->
+
+        <div id="contenedor">
+            <ul>
+                <li><img class="indeximg1" id="indeximg" src="./img/carrusel1.jpg" alt="gente"></li>
+                <li><img class="indeximg2" id="indeximg" src="./img/carrusel2.jpg" alt="sala"></li>
+                <li><img class="indeximg3" id="indeximg" src="./img/carrusel3.jpg" alt="pochoclo"></li>
+                <li><img class="indeximg4" id="indeximg" src="./img/carrusel4.jpg" alt="pochoclo2"></li>
+            </ul>
+        </div>
+
+        <!--cartelera principal-->
         <h2 class="tituloPrincipal">Todas las películas</h2>
 
         <div class="cartelera1">
             <!--peli 1 a 5-->
             <div class="fila1a3">
+
                 <div><img src="./img/pelicula1.jpg" class="cartelera">
 
                     <div class="container">
                         <h3 class="titulosIndex">Lightyear </h3>
 
                         <span id="hideText" class="hideText">
-                            <div class="contenedorLista textoEscondido1">
+                            <div class="contenedorLista ">
                                 <ul class="lista">
                                     <li class="lista">año: 2022</li>
                                     <li class="lista">género:animación</li>
-                                    <li class="lista">duració:100min</li>
+                                    <li class="lista">duración:100min</li>
                                     <li class="lista">director: Angus MacLane</li>
                                     <li class="lista"> Sinopsis:Película sobre el joven piloto de pruebas Buzz Lightyear
                                         quién luego se
@@ -79,7 +91,6 @@
 
                     </div>
                 </div>
-
                 <div><img src="./img/pelicula2.jpg" class="cartelera">
 
                     <div class="container">
@@ -98,9 +109,10 @@
                                 </ul>
                             </div>
                             <button type="button" class="btn btn-light">Comprar</button>
+
                         </span>
 
-                        <button class="readMore_btn " id="readMore_btn ">Ver Más</button>
+                        <button class="readMore_btn " id="verMas_btn ">Ver Más</button>
 
                     </div>
 
@@ -141,7 +153,7 @@
                         <h3 class="titulosIndex">Minions, nace un villano</h3>
 
                         <span id="hideText " class="hideText">
-                            <div class="contenedorLista textoEscondido2">
+                            <div class="contenedorLista textoEscondido4">
                                 <ul class="lista">
                                     <li class="lista">año: 2022</li>
                                     <li class="lista">género: animación</li>
@@ -297,7 +309,7 @@
                     </div>
 
                 </div>
-         <!--peli 11 a 15-->       
+                <!--peli 11 a 15-->
                 <div><img src="./img/pelicula10.jpg" class="cartelera">
                     <div class="container">
                         <h3 class="titulosIndex">Thor, el mundo oscuro</h3>
@@ -468,68 +480,72 @@
                 </div>
             </div>
 
-        </div>
-<!--proximos estrenos-->
-        <h2 class="tituloPrincipal">Próximos estrenos</h2>
+            <!--proximos estrenos-->
+            <h2 class="tituloPrincipal">Próximos estrenos</h2>
 
-        <div class="cartelera2">
-            <div class="fila4a5">
-                <div><img src="./img/proximamente1.jpg" class="cartelera">
-                    <p class="tituloProx">Un crimen Argentino</p>
-                    <p class="fecha">28/08/2022</p>
+            <div class="cartelera2">
+                <div class="fila4a5">
+                    <div><img src="./img/proximamente1.jpg" class="cartelera">
+                        <p class="tituloProx">Un crimen Argentino</p>
+                        <p class="fecha">28/08/2022</p>
+
+                    </div>
+                    <div><img src="./img/proximamente2.jpg" class="cartelera">
+                        <P class="tituloProx">After amor infinito</P>
+                        <p class="fecha">25/08/2022</p>
+                        <h5 id="proximamente"></h5>
+                    </div>
+                    <div><img src="./img/proximamente3.jpg" class="cartelera">
+                        <P class="tituloProx">Elvis</P>
+                        <p class="fecha">01/09/2022</p>
+
+                    </div>
+                    <div><img src="./img/proximamente4.jpg" class="cartelera">
+                        <P class="tituloProx">La chica salvaje</P>
+                        <p class="fecha">01/09/2022</p>
+
+                    </div>
+                    <div><img src="./img/proximamente5.jpg" class="cartelera">
+                        <P class="tituloProx">La huerfana: El origen</P>
+                        <p class="fecha">08/09/2022</p>
+
+                    </div>
                 </div>
-                <div><img src="./img/proximamente2.jpg" class="cartelera">
-                    <P class="tituloProx">After amor infinito</P>
-                    <p class="fecha">25/08/2022</p>
+
+                <div class="fila4a5">
+                    <div><img src="./img/proximamente6.jpg" class="cartelera">
+                        <P class="tituloProx">Bestia</P>
+                        <p class="fecha">11/08/2022</p>
+                    </div>
+                    <div><img src="./img/proximamente7.jpg" class="cartelera">
+                        <P class="tituloProx">Avatar, el camino del agua</P>
+                        <p class="fecha">15/12/2022</p>
+                    </div>
+                    <div><img src="./img/proximamente8.jpg" class="cartelera">
+                        <P class="tituloProx">La luz del diablo</P>
+                        <p class="fecha">27/10/2022</p>
+                    </div>
+                    <div><img src="./img/proximamente9.jpg" class="cartelera">
+                        <P class="tituloProx">Black Adam</P>
+                        <p class="fecha">20/10/2022</p>
+                    </div>
+                    <div><img src="./img/proximamente10.jpg" class="cartelera">
+                        <P class="tituloProx">Visita por última vez</P>
+                        <p class="fecha">01/09/2022</p>
+                    </div>
                 </div>
-                <div><img src="./img/proximamente3.jpg" class="cartelera">
-                    <P class="tituloProx">Elvis</P>
-                    <p class="fecha">01/09/2022</p>
-                </div>
-                <div><img src="./img/proximamente4.jpg" class="cartelera">
-                    <P class="tituloProx">La chica salvaje</P>
-                    <p class="fecha">01/09/2022</p>
-                </div>
-                <div><img src="./img/proximamente5.jpg" class="cartelera">
-                    <P class="tituloProx">La huerfana: El origen</P>
-                    <p class="fecha">08/09/2022</p>
-                </div>
+
+
             </div>
 
-            <div class="fila4a5">
-                <div><img src="./img/proximamente6.jpg" class="cartelera">
-                    <P class="tituloProx">Bestia</P>
-                    <p class="fecha">11/08/2022</p>
-                </div>
-                <div><img src="./img/proximamente7.jpg" class="cartelera">
-                    <P class="tituloProx">Avatar, el camino del agua</P>
-                    <p class="fecha">15/12/2022</p>
-                </div>
-                <div><img src="./img/proximamente8.jpg" class="cartelera">
-                    <P class="tituloProx">La luz del diablo</P>
-                    <p class="fecha">27/10/2022</p>
-                </div>
-                <div><img src="./img/proximamente9.jpg" class="cartelera">
-                    <P class="tituloProx">Black Adam</P>
-                    <p class="fecha">20/10/2022</p>
-                </div>
-                <div><img src="./img/proximamente10.jpg" class="cartelera">
-                    <P class="tituloProx">Visita por última vez</P>
-                    <p class="fecha">01/09/2022</p>
-                </div>
-            </div>
-
-
         </div>
+        <div>
+            <footer>
 
-    </div>
-    <div>
-        <footer>
-
-        </footer>
-    </div>
-    <script src="./js/index.js"></script>
-    <script src="./js/script.js"></script>
+            </footer>
+        </div>
+        <script src="./js/index.js"></script>
+        <script src="./js/script.js"></script>
 </body>
 
 </html>
