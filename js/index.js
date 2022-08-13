@@ -1,30 +1,25 @@
-//peliucla1
-let readMore_btn = document.getElementById('readMore_btn');
-let hideText = document.getElementById('hideText');
+//pelicula1
+//todos los botones para ver más info
+//readMore_btn
+let readMore_btn = document.querySelectorAll('.btn-light');
 
-readMore_btn.addEventListener('click', toggle);
+readMore_btn.forEach(btn => {
+  btn.addEventListener('click', intercambiar);
+});
 
-function toggle() {
-  hideText.classList.toggle('showText');
 
-  if(hideText.classList.contains('showText')) {
-    readMore_btn.innerHTML = 'Ver Menos'
+function intercambiar() {
+  let spanTexto = this.parentElement.querySelector('.hideText'); //Acá, el this hace referencia al elemento sobre el cual se está aplicando la función, en este caso, es el boton de ver más
+  spanTexto.classList.toggle('showText');
+
+  if (spanTexto.classList.contains('showText')) {
+    this.innerHTML = 'Ver Menos'
   }
   else {
-    readMore_btn.innerHTML = 'Ver Mas'
+    this.innerHTML = 'Ver Mas'
   }
 }
 
-//proximamente
-/*
-let nuevosEstrenos = document.createElement('h5');
-nuevosEstrenos.innerHTML = '<h5>Proximamente</h5>';
-document.body.append(nuevosEstrenos);
-*/
 
-const nuevosEstrenos = document.querySelector("h5");
 
-const h5 = document.createElement("h5");
-h5.innerHTML = "Proximamente en estrenarse"
 
-nuevosEstrenos.appendChild(h5)

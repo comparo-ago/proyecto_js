@@ -31,16 +31,16 @@
                                 <a class="nav-link" href="#">peliculas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">socio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">buscar</a>
+                                <a class="nav-link" href="./pages/compra.html">Mis compras</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./pages/login.html">login</a>
                             </li>
                         </ul>
-
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button type="button" class="btn ">Buscar</button>
+                        </form>
                     </div>
                 </div>
             </nav>
@@ -57,495 +57,681 @@
                 <li><img class="indeximg4" id="indeximg" src="./img/carrusel4.jpg" alt="pochoclo2"></li>
             </ul>
         </div>
+    </div>
+    <!--cartelera principal-->
+    <h2 class="tituloPrincipal">Todas las películas</h2>
 
-        <!--cartelera principal-->
-        <h2 class="tituloPrincipal">Todas las películas</h2>
 
-        <div class="cartelera1">
-            <!--peli 1 a 5-->
-            <div class="fila1a3">
+    <!--codigo de prueba-->
 
-                <div><img src="./img/pelicula1.jpg" class="cartelera">
 
-                    <div class="container">
-                        <h3 class="titulosIndex">Lightyear </h3>
+    <div class="tab-content" id="pills-tabContent">
 
-                        <span id="hideText" class="hideText">
-                            <div class="contenedorLista ">
-                                <ul class="lista">
-                                    <li class="lista">año: 2022</li>
-                                    <li class="lista">género:animación</li>
-                                    <li class="lista">duración:100min</li>
-                                    <li class="lista">director: Angus MacLane</li>
-                                    <li class="lista"> Sinopsis:Película sobre el joven piloto de pruebas Buzz Lightyear
-                                        quién luego se
-                                        convertiría en el popular juguete que todos los niños querrían tener en Toy
-                                        Story.
-                                    </li>
-                                </ul>
+        <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
+            aria-labelledby="pills-profile-tab">
+
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-lg-4 ">
+
+                <div class="col d-flex justify-content-center mb-4">
+
+                    <div class="card shadow mb-1 contenedorIndex" style="background-color: transparent"
+                        style="width: 20rem;">
+                        <img src="./img/pelicula1.jpg" class="movie cartelera" id="tamaño" alt="Lightyear">
+
+                        <h5 class="card-title pt-2 text-center text-light ">Lightyear</h5>
+                        <div class="card-body">
+                            <!--codigo de prueba-->
+
+                            <div class="container">
+                                <span id="hideText" class="hideText">
+                                    <div class="contenedorLista ">
+                                        <ul class="lista">
+                                            <li class="lista">año: 2022</li>
+                                            <li class="lista">género:animación</li>
+                                            <li class="lista">duración:100min</li>
+                                            <li class="lista">director: Angus MacLane</li>
+                                            <li class="lista"> Sinopsis:Película sobre el joven piloto de pruebas Buzz
+                                                Lightyear
+                                                quién luego se
+                                                convertiría en el popular juguete que todos los niños querrían tener en
+                                                Toy
+                                                Story.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <h5 class="text-light">Precio: <span>$</span> <span class="precio"> 1500</span></h5>
+                                <button type="button" class="btn btn-light">Ver Más</button>
+
                             </div>
-                            <button type="button" class="btn btn-light">Comprar</button>
-                        </span>
+                            <!--fin de codigo de prueba-->
 
-                        <button class="readMore_btn" id="readMore_btn">Ver Más</button>
 
-                    </div>
-                </div>
-                <div><img src="./img/pelicula2.jpg" class="cartelera">
-
-                    <div class="container">
-                        <h3 class="titulosIndex">El perro Samurai</h3>
-
-                        <span id="hideText " class="hideText">
-                            <div class="contenedorLista textoEscondido2">
-                                <ul class="lista">
-                                    <li class="lista">año: 2022</li>
-                                    <li class="lista">género: animación</li>
-                                    <li class="lista">duración: 98min</li>
-                                    <li class="lista">director:Chris Bailey, Mark Koetsier, Rob Minkoff </li>
-                                    <li class="lista"> Sinopsis: EL PERRO SAMURAI: LA LEYENDA DE KAKAMUCHO. Un pueblo de
-                                        gatos se encuentra en peligro y un héroe inesperado surge para ayudarlos: ¡un
-                                        perro llamado Hank!.</li>
-                                </ul>
+                            <div class="d-grid gap-2">
+                                <button class="readMore_btn ">Comprar</button>
                             </div>
-                            <button type="button" class="btn btn-light">Comprar</button>
-
-                        </span>
-
-                        <button class="readMore_btn " id="verMas_btn ">Ver Más</button>
-
-                    </div>
-
-
-                </div>
-                <div><img src="./img/pelicula3.jpg" class="cartelera">
-
-                    <div class="container">
-                        <h3 class="titulosIndex">DC. Liga de Supermascotas</h3>
-
-                        <span id="hideText " class="hideText">
-                            <div class="contenedorLista textoEscondido2">
-                                <ul class="lista">
-                                    <li class="lista">año: 2022</li>
-                                    <li class="lista">género: animación</li>
-                                    <li class="lista">duración: 106min</li>
-                                    <li class="lista">director: Jared Stern, Sam Levine </li>
-                                    <li class="lista"> Sinopsis: Krypto el superperro y Superman son mejores amigos
-                                        inseparables que comparten los mismos superpoderes y luchan juntos contra el
-                                        crimen en Metropolis. Cuando Superman y el resto de la Liga de la Justicia son
-                                        secuestrados, Krypto debe convencer a una banda de animales (Ace el sabueso, PB
-                                        el minicerdo, Merton la tortuga y Chip la ardilla) a dominar sus propios poderes
-                                        recién descubiertos y ayudarlo a rescatar a los superhéroes. </li>
-                                </ul>
-                            </div>
-                            <button type="button" class="btn btn-light">Comprar</button>
-                        </span>
-
-                        <button class="readMore_btn " id="readMore_btn ">Ver Más</button>
-
+                        </div>
                     </div>
 
                 </div>
 
-                <div><img src="./img/pelicula4.jpg" class="cartelera">
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 contenedorIndex" style="background-color: transparent"
+                        style="width: 20rem;">
+                        <img src="./img/pelicula2.jpg" class="movie cartelera" alt="...">
+                        <h5 class="card-title pt-2 text-center text-light ">El perro Samurai</h5>
+                        <div class="card-body">
 
-                    <div class="container">
-                        <h3 class="titulosIndex">Minions, nace un villano</h3>
+                            <div class="container">
 
-                        <span id="hideText " class="hideText">
-                            <div class="contenedorLista textoEscondido4">
-                                <ul class="lista">
-                                    <li class="lista">año: 2022</li>
-                                    <li class="lista">género: animación</li>
-                                    <li class="lista">duración: 87min</li>
-                                    <li class="lista">director: Brad Ableson, Kyle Balda </li>
-                                    <li class="lista"> Sinopsis: Muy pronto, de la franquicia animada más grande de la
-                                        historia y el fenómeno global, llega la historia de un adolescente de 12 años
-                                        que sueña con convertirse en el villano más grande del mundo: MINIONS: NACE UN
-                                        VILLANO.</li>
-                                </ul>
+                                <span id="hideText " class="hideText">
+                                    <div class="contenedorLista">
+                                        <ul class="lista">
+                                            <li class="lista">año: 2022</li>
+                                            <li class="lista">género: animación</li>
+                                            <li class="lista">duración: 98min</li>
+                                            <li class="lista">director:Chris Bailey, Mark Koetsier, Rob Minkoff </li>
+                                            <li class="lista"> Sinopsis: EL PERRO SAMURAI: LA LEYENDA DE KAKAMUCHO. Un
+                                                pueblo de
+                                                gatos se encuentra en peligro y un héroe inesperado surge para
+                                                ayudarlos: ¡un
+                                                perro llamado Hank!.</li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <h5 class="text-light">Precio: <span>$</span> <span class="precio"> 2000</span></h5>
+                                <button type="button" class="btn btn-light">Ver Más</button>
+
+
                             </div>
-                            <button type="button" class="btn btn-light">Comprar</button>
-                        </span>
 
-                        <button class="readMore_btn " id="readMore_btn ">Ver Más</button>
+                            <div class="d-grid gap-2">
+                                <button class="readMore_btn ">Comprar</button>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-                <div><img src="./img/pelicula5.jpg" class="cartelera">
-                    <div class="container">
-                        <h3 class="titulosIndex">Toy Stoty 4</h3>
 
-                        <span id="hideText " class="hideText">
-                            <div class="contenedorLista textoEscondido2">
-                                <ul class="lista">
-                                    <li class="lista">año: 2022</li>
-                                    <li class="lista">género: infantil</li>
-                                    <li class="lista">duración: 108min</li>
-                                    <li class="lista">director: Josh Cooley </li>
-                                    <li class="lista"> Sinopsis:Woody siempre ha tenido claro cuál es su labor en el
-                                        mundo y cuál es su prioridad: cuidar a su dueño, ya sea Andy o Bonnie. Sin
-                                        embargo, Woody descubrirá lo grande que puede ser el mundo para un juguete
-                                        cuando Forky se convierta en su nuevo compañero de habitación. </li>
-                                </ul>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 contenedorIndex" style="background-color: transparent"
+                        style="width: 20rem;">
+
+                        <img src="./img/pelicula3.jpg" class="movie cartelera" id="tamaño"
+                            alt="DC Liga de Supermarscotas">
+                        <h5 class="card-title pt-2 text-center text-light ">DC Liga de Supermarscotas</h5>
+                        <div class="card-body">
+
+                            <div class="container">
+
+                                <span id="hideText " class="hideText">
+                                    <div class="contenedorLista">
+                                        <ul class="lista">
+                                            <li class="lista">año: 2022</li>
+                                            <li class="lista">género: animación</li>
+                                            <li class="lista">duración: 106min</li>
+                                            <li class="lista">director: Jared Stern, Sam Levine </li>
+                                            <li class="lista"> Sinopsis: Krypto el superperro y Superman son mejores
+                                                amigos
+                                                inseparables que comparten los mismos superpoderes y luchan juntos
+                                                contra el
+                                                crimen en Metropolis. Cuando Superman y el resto de la Liga de la
+                                                Justicia son
+                                                secuestrados, Krypto debe convencer a una banda de animales (Ace el
+                                                sabueso, PB
+                                                el minicerdo, Merton la tortuga y Chip la ardilla) a dominar sus propios
+                                                poderes
+                                                recién descubiertos y ayudarlo a rescatar a los superhéroes. </li>
+                                        </ul>
+                                    </div>
+
+                                </span>
+                                <h5 class="text-light">Precio: <span>$</span> <span class="precio"> 2000</span></h5>
+                                <button type="button" class="btn btn-light">Ver Más</button>
+
+
                             </div>
-                            <button type="button" class="btn btn-light">Comprar</button>
-                        </span>
 
-                        <button class="readMore_btn " id="readMore_btn ">Ver Más</button>
+                            <div class="d-grid gap-2">
+                                <button class="readMore_btn ">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 contenedorIndex" style="background-color: transparent"
+                        style="width: 20rem;">
+
+                        <img src="./img/pelicula4.jpg" class="movie cartelera" id="tamaño"
+                            alt="Minions, nace un Villano">
+                        <h5 class="card-title pt-2 text-center text-light ">Minions, nace un Villano</h5>
+                        <div class="card-body">
+
+                            <div class="container">
+                                <span id="hideText " class="hideText">
+                                    <div class="contenedorLista">
+                                        <ul class="lista">
+                                            <li class="lista">año: 2022</li>
+                                            <li class="lista">género: animación</li>
+                                            <li class="lista">duración: 87min</li>
+                                            <li class="lista">director: Brad Ableson, Kyle Balda </li>
+                                            <li class="lista"> Sinopsis: Muy pronto, de la franquicia animada más grande
+                                                de la
+                                                historia y el fenómeno global, llega la historia de un adolescente de 12
+                                                años
+                                                que sueña con convertirse en el villano más grande del mundo: MINIONS:
+                                                NACE UN
+                                                VILLANO.</li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <button type="button" class="btn btn-light">Ver Más</button>
+
+                            </div>
+                            <h5 class="text-light">Precio: <span>$</span> <span class="precio"> 2000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="readMore_btn ">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 contenedorIndex" style="background-color: transparent"
+                        style="width: 20rem;">
+
+                        <img src="./img/pelicula5.jpg" class="movie cartelera" id="tamaño" alt="Toy Story 4">
+                        <h5 class="card-title pt-2 text-center text-light ">Toy Story 4</h5>
+                        <div class="card-body">
+
+                            <div class="container">
+                                <span id="hideText " class="hideText">
+                                    <div class="contenedorLista">
+                                        <ul class="lista">
+                                            <li class="lista">año: 2022</li>
+                                            <li class="lista">género: infantil</li>
+                                            <li class="lista">duración: 108min</li>
+                                            <li class="lista">director: Josh Cooley </li>
+                                            <li class="lista"> Sinopsis:Woody siempre ha tenido claro cuál es su labor
+                                                en el
+                                                mundo y cuál es su prioridad: cuidar a su dueño, ya sea Andy o Bonnie.
+                                                Sin
+                                                embargo, Woody descubrirá lo grande que puede ser el mundo para un
+                                                juguete
+                                                cuando Forky se convierta en su nuevo compañero de habitación. </li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <button type="button" class="btn btn-light">Ver Más</button>
+
+                            </div>
+
+
+                            <h5 class="text-light">Precio: <span>$</span> <span class="precio"> 2100</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="readMore_btn ">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 contenedorIndex" style="background-color: transparent"
+                        style="width: 20rem;">
+
+                        <img src="./img/pelicula6.jpg" class="movie cartelera " id="tamaño" alt="La ciudad perdida">
+                        <h5 class="card-title pt-2 text-center text-light ">La ciudad perdida
+                        </h5>
+                        <div class="card-body">
+
+                            <div class="container">
+
+
+                                <span id="hideText " class="hideText">
+                                    <div class="contenedorLista ">
+                                        <ul class="lista">
+                                            <li class="lista">año: 2022</li>
+                                            <li class="lista">género: romance/aventura</li>
+                                            <li class="lista">duración: 122min</li>
+                                            <li class="lista">director: Aaron Nee, Adam Nee </li>
+                                            <li class="lista"> Sinopsis: La escritora solitaria Loretta Sage escribe
+                                                sobre
+                                                lugares exóticos en sus populares novelas de aventuras con un atractivo
+                                                modelo
+                                                de portada, Alan. Mientras está de gira promocionando su nuevo libro, es
+                                                secuestrada por un excéntrico multimillonario.</li>
+                                        </ul>
+                                    </div>
+
+                                </span>
+                                <button type="button" class="btn btn-light">Ver Más</button>
+
+                            </div>
+
+                            <h5 class="text-light">Precio: <span>$</span> <span class="precio"> 2500</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="readMore_btn ">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 contenedorIndex" style="background-color: transparent"
+                        style="width: 20rem;">
+
+                        <img src="./img/pelicula7.jpg" class="movie cartelera " id="tamaño"
+                            alt="Jurassic World Dominio">
+                        <h5 class="card-title pt-2 text-center text-light ">Jurassic World Dominio
+                        </h5>
+                        <div class="card-body">
+                            <div class="container">
+                                <span id="hideText " class="hideText">
+                                    <div class="contenedorLista">
+                                        <ul class="lista">
+                                            <li class="lista">año: 2022</li>
+                                            <li class="lista">género: aventuras</li>
+                                            <li class="lista">duración: 147min</li>
+                                            <li class="lista">director: Colin Trevorrow </li>
+                                            <li class="lista"> Sinopsis:Del arquitecto y director de Mundo Jurásico,
+                                                Colin
+                                                Trevorrow. Dominio tiene lugar cuatro años después de la destrucción de
+                                                Isla
+                                                Nublar. Los dinosaurios ahora viven y cazan junto a los humanos en todo
+                                                el
+                                                mundo. Este frágil equilibrio cambiará el futuro y determinará, de una
+                                                vez por
+                                                todas, si los seres humanos deben seguir siendo los depredadores máximos
+                                                en un
+                                                planeta que ahora comparten con las criaturas más temibles de la
+                                                historia. </li>
+                                        </ul>
+                                    </div>
+
+                                </span>
+                                <button type="button" class="btn btn-light">Ver Más</button>
+
+                            </div>
+                            <h5 class="text-light">Precio: <span>$</span> <span class="precio"> 2500</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="readMore_btn ">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 contenedorIndex" style="background-color: transparent"
+                        style="width: 20rem;">
+
+                        <img src="./img/pelicula8.jpg" class="movie cartelera " id="tamaño" alt="Tren Bala">
+                        <h5 class="card-title pt-2 text-center text-light ">Tren Bala
+                        </h5>
+                        <div class="card-body">
+                            <div class="container">
+                                <span id="hideText " class="hideText">
+                                    <div class="contenedorLista">
+                                        <ul class="lista">
+                                            <li class="lista">año: 2022</li>
+                                            <li class="lista">género: acción</li>
+                                            <li class="lista">duración: 126min</li>
+                                            <li class="lista">director: David Leitch </li>
+                                            <li class="lista"> Sinopsis: En Tren Bala, Brad Pitt interpreta a Ladybug,
+                                                un
+                                                asesino con mala suerte que está decidido a trabajar de forma pacífica
+                                                después
+                                                de que demasiados trabajos se salieron de control. El destino, sin
+                                                embargo,
+                                                puede tener otros planes, ya que la última misión de Ladybug lo pone en
+                                                conflicto con adversarios letales de todo el mundo -todos con objetivos
+                                                conectados, pero opuestos- en el tren más rápido del mundo... y él tiene
+                                                que
+                                                averiguar cómo bajarse. Del director de Deadpool 2, David Leitch, el
+                                                final del
+                                                recorrido es sólo el comienzo en un viaje de emociones salvaje y sin
+                                                pausa a
+                                                través del Japón actual.
+
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </span>
+                                <button type="button" class="btn btn-light">Ver Más</button>
+
+                            </div>
+                            <h5 class="text-light">Precio: <span>$</span> <span class="precio"> 2500</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="readMore_btn ">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 contenedorIndex" style="background-color: transparent"
+                        style="width: 20rem;">
+
+                        <img src="./img/pelicula9.jpg" class="movie cartelera " id="tamaño" alt="La ciudad perdida">
+                        <h5 class="card-title pt-2 text-center text-light ">Top Gun Maverick
+                        </h5>
+                        <div class="card-body">
+                            <div class="container">
+                                <span id="hideText " class="hideText">
+                                    <div class="contenedorLista ">
+                                        <ul class="lista">
+                                            <li class="lista">año: 2022</li>
+                                            <li class="lista">género: acción</li>
+                                            <li class="lista">duración: 133min</li>
+                                            <li class="lista">director: Joseph Kosinski</li>
+                                            <li class="lista"> Sinopsis: Después de más de treinta años de servicio como
+                                                uno de
+                                                los mejores aviadores de la Armada, Pete "Maverick" Mitchell (Tom
+                                                Cruise) está
+                                                donde pertenece, como un valiente piloto de prueba y esquivando el
+                                                avance en el
+                                                rango que lo pondría en tierra. Cuando se halla entrenando a un
+                                                destacamento de
+                                                graduados de Top Gun para una misión especializada que ningún piloto
+                                                vivo ha
+                                                visto nunca, Maverick se encuentra con el teniente Bradley Bradshaw
+                                                (Miles
+                                                Teller), llamada: "Gallo", el hijo del difunto amigo de Maverick y el
+                                                oficial de
+                                                intercepción de radar, el teniente Nick Bradshaw, también conocido como
+                                                "Goose".
+                                                Enfrentando un futuro incierto y confrontando a los fantasmas de su
+                                                pasado,
+                                                Maverick se ve envuelto en una confrontación con sus propios miedos más
+                                                profundos, culminando en una misión que exige el máximo sacrificio de
+                                                aquellos
+                                                que serán elegidos para volar.</li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <button type="button" class="btn btn-light">Ver Más</button>
+
+                            </div>
+                            <h5 class="text-light">Precio: <span>$</span> <span class="precio"> 2500</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="readMore_btn ">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 contenedorIndex" style="background-color: transparent"
+                        style="width: 20rem;">
+
+                        <img src="./img/pelicula10.jpg" class="movie cartelera " id="tamaño" alt="La ciudad perdida">
+                        <h5 class="card-title pt-2 text-center text-light ">Thor, el Mundo oscuro
+                        </h5>
+                        <div class="card-body">
+                            <div class="container">
+                                <span id="hideText " class="hideText">
+                                    <div class="contenedorLista ">
+                                        <ul class="lista">
+                                            <li class="lista">año: 2013</li>
+                                            <li class="lista">género: acción</li>
+                                            <li class="lista">duración: 123min</li>
+                                            <li class="lista">director: Alan Taylor </li>
+                                            <li class="lista"> Sinopsis: Malekith, un enemigo más antiguo que el
+                                                universo,
+                                                regresa a la Tierra para cumplir su plan destructor. Thor debe
+                                                enfrentarse a un
+                                                rival al que ni siquiera Odín parece poder detener y, desesperado,
+                                                libera a su
+                                                hermano Loki para que lo ayude.</li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <button type="button" class="btn btn-light">Ver Más</button>
+
+                            </div>
+                            <h5 class="text-light">Precio: <span>$</span> <span class="precio"> 2500</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="readMore_btn ">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 contenedorIndex" style="background-color: transparent"
+                        style="width: 20rem;">
+
+                        <img src="./img/pelicula11.jpg" class="movie cartelera " id="tamaño" alt="La ciudad perdida">
+                        <h5 class="card-title pt-2 text-center text-light ">Perdiendo el norte
+                        </h5>
+                        <div class="card-body">
+                            <div class="container">
+                                <span id="hideText " class="hideText">
+                                    <div class="contenedorLista">
+                                        <ul class="lista">
+                                            <li class="lista">año: 2015</li>
+                                            <li class="lista">género: comedia</li>
+                                            <li class="lista">duración: 108min</li>
+                                            <li class="lista">director: Nacho G. Velilla</li>
+                                            <li class="lista"> Sinopsis: Hugo y Braulio, dos jóvenes con formación
+                                                universitaria, hartos de no encontrar ni trabajo ni futuro en España,
+                                                deciden
+                                                emigrar a Alemania después de ver un programa de televisión. Pero al
+                                                llegar
+                                                descubren que las cosas no son tan fáciles como se pensaban ni cómo se
+                                                las
+                                                habían contado.</li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <button type="button" class="btn btn-light">Ver Más</button>
+
+                            </div>
+                            <h5 class="text-light">Precio: <span>$</span> <span class="precio"> 2500</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="readMore_btn ">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 contenedorIndex" style="background-color: transparent"
+                        style="width: 20rem;">
+
+                        <img src="./img/pelicula12.jpg" class="movie cartelera " id="tamaño" alt="La ciudad perdida">
+                        <h5 class="card-title pt-2 text-center text-light ">30 noches con mi ex
+                        </h5>
+                        <div class="card-body">
+                            <div class="container">
+                                <span id="hideText " class="hideText">
+                                    <div class="contenedorLista">
+                                        <ul class="lista">
+                                            <li class="lista">año: 2022</li>
+                                            <li class="lista">género: comedia</li>
+                                            <li class="lista">duración: 95min</li>
+                                            <li class="lista">director: Adrian Suar </li>
+                                            <li class="lista"> Sinopsis: El Turbo (Adrián Suar) quien luego de 3 años de
+                                                separado de La Loba (Pilar Gamboa), acepta, por pedido de la hija que
+                                                tienen en
+                                                común, convivir durante 30 días con su ex mujer, que viene de una larga
+                                                internación psiquiátrica.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <button type="button" class="btn btn-light">Ver Más</button>
+
+                            </div>
+                            <h5 class="text-light">Precio: <span>$</span> <span class="precio"> 2500</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="readMore_btn ">Comprar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="fila1a3">
-                <!--peli 6 a 10-->
-                <div><img src="./img/pelicula6.jpg" class="cartelera">
-                    <div class="container">
-                        <h3 class="titulosIndex">La ciudad perdida</h3>
+            <!--
+            <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 contenedorIndex" style="background-color: transparent"
+                    style="width: 20rem;">
 
-                        <span id="hideText " class="hideText">
-                            <div class="contenedorLista textoEscondido2">
-                                <ul class="lista">
-                                    <li class="lista">año: 2022</li>
-                                    <li class="lista">género: romance/aventura</li>
-                                    <li class="lista">duración: 122min</li>
-                                    <li class="lista">director: Aaron Nee, Adam Nee </li>
-                                    <li class="lista"> Sinopsis: La escritora solitaria Loretta Sage escribe sobre
-                                        lugares exóticos en sus populares novelas de aventuras con un atractivo modelo
-                                        de portada, Alan. Mientras está de gira promocionando su nuevo libro, es
-                                        secuestrada por un excéntrico multimillonario.</li>
-                                </ul>
-                            </div>
-                            <button type="button" class="btn btn-light">Comprar</button>
-                        </span>
+                    <img src="./img/pelicula13.jpg" class="movie cartelera " alt="La ciudad perdida">
+                    <h5 class="card-title pt-2 text-center text-light ">Buena Suerte Leo
+                    </h5>
+                    <div class="card-body">
 
-                        <button class="readMore_btn " id="readMore_btn ">Ver Más</button>
-                    </div>
-
-                </div>
-                <div><img src="./img/pelicula7.jpg" class="cartelera">
-                    <div class="container">
-                        <h3 class="titulosIndex">Jurassic World</h3>
-
-                        <span id="hideText " class="hideText">
-                            <div class="contenedorLista textoEscondido2">
-                                <ul class="lista">
-                                    <li class="lista">año: 2022</li>
-                                    <li class="lista">género: aventuras</li>
-                                    <li class="lista">duración: 147min</li>
-                                    <li class="lista">director: Colin Trevorrow </li>
-                                    <li class="lista"> Sinopsis:Del arquitecto y director de Mundo Jurásico, Colin
-                                        Trevorrow. Dominio tiene lugar cuatro años después de la destrucción de Isla
-                                        Nublar. Los dinosaurios ahora viven y cazan junto a los humanos en todo el
-                                        mundo. Este frágil equilibrio cambiará el futuro y determinará, de una vez por
-                                        todas, si los seres humanos deben seguir siendo los depredadores máximos en un
-                                        planeta que ahora comparten con las criaturas más temibles de la historia. </li>
-                                </ul>
-                            </div>
-                            <button type="button" class="btn btn-light">Comprar</button>
-                        </span>
-
-                        <button class="readMore_btn " id="readMore_btn ">Ver Más</button>
-                    </div>
-                </div>
-                <div><img src="./img/pelicula8.jpg" class="cartelera">
-                    <div class="container">
-                        <h3 class="titulosIndex">Tren Bala</h3>
-
-                        <span id="hideText " class="hideText">
-                            <div class="contenedorLista textoEscondido2">
-                                <ul class="lista">
-                                    <li class="lista">año: 2022</li>
-                                    <li class="lista">género: acción</li>
-                                    <li class="lista">duración: 126min</li>
-                                    <li class="lista">director: David Leitch </li>
-                                    <li class="lista"> Sinopsis: En Tren Bala, Brad Pitt interpreta a Ladybug, un
-                                        asesino con mala suerte que está decidido a trabajar de forma pacífica después
-                                        de que demasiados trabajos se salieron de control. El destino, sin embargo,
-                                        puede tener otros planes, ya que la última misión de Ladybug lo pone en
-                                        conflicto con adversarios letales de todo el mundo -todos con objetivos
-                                        conectados, pero opuestos- en el tren más rápido del mundo... y él tiene que
-                                        averiguar cómo bajarse. Del director de Deadpool 2, David Leitch, el final del
-                                        recorrido es sólo el comienzo en un viaje de emociones salvaje y sin pausa a
-                                        través del Japón actual.
-
-                                    </li>
-                                </ul>
-                            </div>
-                            <button type="button" class="btn btn-light">Comprar</button>
-                        </span>
-
-                        <button class="readMore_btn " id="readMore_btn ">Ver Más</button>
-                    </div>
-                </div>
-                <div><img src="./img/pelicula9.jpg" class="cartelera">
-                    <div class="container">
-                        <h3 class="titulosIndex">Top Gun Maverick</h3>
-
-                        <span id="hideText " class="hideText">
-                            <div class="contenedorLista textoEscondido2">
-                                <ul class="lista">
-                                    <li class="lista">año: 2022</li>
-                                    <li class="lista">género: acción</li>
-                                    <li class="lista">duración: 133min</li>
-                                    <li class="lista">director: Joseph Kosinski</li>
-                                    <li class="lista"> Sinopsis: Después de más de treinta años de servicio como uno de
-                                        los mejores aviadores de la Armada, Pete "Maverick" Mitchell (Tom Cruise) está
-                                        donde pertenece, como un valiente piloto de prueba y esquivando el avance en el
-                                        rango que lo pondría en tierra. Cuando se halla entrenando a un destacamento de
-                                        graduados de Top Gun para una misión especializada que ningún piloto vivo ha
-                                        visto nunca, Maverick se encuentra con el teniente Bradley Bradshaw (Miles
-                                        Teller), llamada: "Gallo", el hijo del difunto amigo de Maverick y el oficial de
-                                        intercepción de radar, el teniente Nick Bradshaw, también conocido como "Goose".
-                                        Enfrentando un futuro incierto y confrontando a los fantasmas de su pasado,
-                                        Maverick se ve envuelto en una confrontación con sus propios miedos más
-                                        profundos, culminando en una misión que exige el máximo sacrificio de aquellos
-                                        que serán elegidos para volar.</li>
-                                </ul>
-                            </div>
-                            <button type="button" class="btn btn-light">Comprar</button>
-                        </span>
-
-                        <button class="readMore_btn " id="readMore_btn ">Ver Más</button>
-                    </div>
-
-                </div>
-                <!--peli 11 a 15-->
-                <div><img src="./img/pelicula10.jpg" class="cartelera">
-                    <div class="container">
-                        <h3 class="titulosIndex">Thor, el mundo oscuro</h3>
-
-                        <span id="hideText " class="hideText">
-                            <div class="contenedorLista textoEscondido2">
-                                <ul class="lista">
-                                    <li class="lista">año: 2013</li>
-                                    <li class="lista">género: acción</li>
-                                    <li class="lista">duración: 123min</li>
-                                    <li class="lista">director: Alan Taylor </li>
-                                    <li class="lista"> Sinopsis: Malekith, un enemigo más antiguo que el universo,
-                                        regresa a la Tierra para cumplir su plan destructor. Thor debe enfrentarse a un
-                                        rival al que ni siquiera Odín parece poder detener y, desesperado, libera a su
-                                        hermano Loki para que lo ayude.</li>
-                                </ul>
-                            </div>
-                            <button type="button" class="btn btn-light">Comprar</button>
-                        </span>
-
-                        <button class="readMore_btn " id="readMore_btn ">Ver Más</button>
+                        <h5 class="text-light">Precio: <span>$</span> <span class="precio"> 2500</span></h5>
+                        <div class="d-grid gap-2">
+                            <button class="readMore_btn ">Comprar</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="fila1a3">
-                <div><img src="./img/pelicula11.jpg" class="cartelera">
-                    <div class="container">
-                        <h3 class="titulosIndex">Perdiendo el norte</h3>
+            <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 contenedorIndex" style="background-color: transparent"
+                    style="width: 20rem;">
 
-                        <span id="hideText " class="hideText">
-                            <div class="contenedorLista textoEscondido2">
-                                <ul class="lista">
-                                    <li class="lista">año: 2015</li>
-                                    <li class="lista">género: comedia</li>
-                                    <li class="lista">duración: 108min</li>
-                                    <li class="lista">director: Nacho G. Velilla</li>
-                                    <li class="lista"> Sinopsis: Hugo y Braulio, dos jóvenes con formación
-                                        universitaria, hartos de no encontrar ni trabajo ni futuro en España, deciden
-                                        emigrar a Alemania después de ver un programa de televisión. Pero al llegar
-                                        descubren que las cosas no son tan fáciles como se pensaban ni cómo se las
-                                        habían contado.</li>
-                                </ul>
-                            </div>
-                            <button type="button" class="btn btn-light">Comprar</button>
-                        </span>
+                    <img src="./img/pelicula14.jpg" class="movie cartelera " alt="La ciudad perdida">
+                    <h5 class="card-title pt-2 text-center text-light ">El teléfono negro
+                    </h5>
+                    <div class="card-body">
 
-                        <button class="readMore_btn " id="readMore_btn ">Ver Más</button>
-                    </div>
-                </div>
-                <div><img src="./img/pelicula12.jpg" class="cartelera">
-
-                    <div class="container">
-                        <h3 class="titulosIndex">30 noches con mi ex</h3>
-
-                        <span id="hideText " class="hideText">
-                            <div class="contenedorLista textoEscondido2">
-                                <ul class="lista">
-                                    <li class="lista">año: 2022</li>
-                                    <li class="lista">género: comedia</li>
-                                    <li class="lista">duración: 95min</li>
-                                    <li class="lista">director: Adrian Suar </li>
-                                    <li class="lista"> Sinopsis: El Turbo (Adrián Suar) quien luego de 3 años de
-                                        separado de La Loba (Pilar Gamboa), acepta, por pedido de la hija que tienen en
-                                        común, convivir durante 30 días con su ex mujer, que viene de una larga
-                                        internación psiquiátrica. La Loba debe hacer la transición entre la internación
-                                        y su reinserción en la sociedad. La nueva “vida en familia” hará que El Turbo y
-                                        La Loba revivan los sentimientos de amor y despierte la ilusión de volver a
-                                        estar juntos. Mientras resurgen los sentimientos encontrados entre ambos, y con
-                                        la necesidad de contención emocional de fondo, la convivencia se convierte en un
-                                        sube y baja emocional que los hará vacilar entre el amor y lo que llevó al fin
-                                        de la pareja. Una tormenta perfecta llena de irreverencias, incidentes con los
-                                        vecinos, arrebatos sexuales y un comportamiento público poco convencional, que
-                                        los hará vivir una verdadera odisea, divertida, desopilante y con mucho amor.
-                                    </li>
-                                </ul>
-                            </div>
-                            <button type="button" class="btn btn-light">Comprar</button>
-                        </span>
-
-                        <button class="readMore_btn " id="readMore_btn ">Ver Más</button>
-                    </div>
-
-                </div>
-                <div><img src="./img/pelicula13.jpg" class="cartelera">
-                    <div class="container">
-                        <h3 class="titulosIndex">Buena suerte Leo grande</h3>
-
-                        <span id="hideText " class="hideText">
-                            <div class="contenedorLista textoEscondido2">
-                                <ul class="lista">
-                                    <li class="lista">año: 2022</li>
-                                    <li class="lista">género: comedia</li>
-                                    <li class="lista">duración: 97min</li>
-                                    <li class="lista">director: Sophie Hyde </li>
-                                    <li class="lista"> Sinopsis: Nancy Stokes, es una maestra jubilada y viuda, con el
-                                        anhelo de tener nuevas experiencias, conexión humana y algo de sexo. Buen sexo.
-                                        Mientras que su esposo, Robert, le proporcionó un hogar, una familia, "algo
-                                        parecido a una vida", el buen sexo nunca estuvo presente. Pero ahora que se ha
-                                        ido, Nancy tiene un plan: Tener una aventura con un terapeuta sexual, llamado
-                                        Leo Grande. En una habitación de hotel, Nancy se encuentra con Leo, se ve tan
-                                        bien como en la foto, pero lo que Nancy no esperaba era una buena charla y
-                                        exceder sus expectativas de sexo. Con una creciente confianza sexual, Nancy
-                                        comienza a relajarse, algo en ella comienza a cambiar y sus gastadas barreras
-                                        comienzan a caerse.</li>
-                                </ul>
-                            </div>
-                            <button type="button" class="btn btn-light">Comprar</button>
-                        </span>
-
-                        <button class="readMore_btn " id="readMore_btn ">Ver Más</button>
-                    </div>
-                </div>
-                <div><img src="./img/pelicula14.jpg" class="cartelera">
-
-                    <div class="container">
-                        <h3 class="titulosIndex">Teléfono negro</h3>
-
-                        <span id="hideText " class="hideText">
-                            <div class="contenedorLista textoEscondido2">
-                                <ul class="lista">
-                                    <li class="lista">año: 2022</li>
-                                    <li class="lista">género:</li>
-                                    <li class="lista">duración:</li>
-                                    <li class="lista">director: Scott Derrickson</li>
-                                    <li class="lista"> Sinopsis:Finney Shaw, un tímido, pero inteligente niño de 13
-                                        años es secuestrado por un sádico asesino y atrapado en un aterrador, oscuro y
-                                        aislado sótano, donde los gritos son de poca utilidad. Cuando un teléfono negro
-                                        desconectado en la pared comienza a sonar, Finney descubre que puede escuchar a
-                                        los espíritus de las víctimas anteriores del asesino. Los espirítus en el
-                                        teléfono están decididos a asegurarse de que lo que les pasó a ellos no le pase
-                                        a Finney.</li>
-                                </ul>
-                            </div>
-                            <button type="button" class="btn btn-light">Comprar</button>
-                        </span>
-
-                        <button class="readMore_btn " id="readMore_btn ">Ver Más</button>
-                    </div>
-
-                </div>
-                <div><img src="./img/pelicula15.jpg" class="cartelera">
-
-                    <div class="container">
-                        <h3 class="titulosIndex">La habitación del horror</h3>
-
-                        <span id="hideText " class="hideText">
-                            <div class="contenedorLista textoEscondido2">
-                                <ul class="lista">
-                                    <li class="lista">año: 2022</li>
-                                    <li class="lista">género: terror</li>
-                                    <li class="lista">duración: 98min</li>
-                                    <li class="lista">director:Kim Kwang-Bin </li>
-                                    <li class="lista"> Sinopsis: Luego de mudarse a una nueva casa con su padre, la
-                                        pequeña Ina comienza a comportarse extrañamente. Al poco tiempo, desaparece de
-                                        su cuarto de forma inexplicable. Su padre, devastado, es incapaz de encontrar
-                                        pista alguna de su paradero, hasta que un joven exorcista aparece en la casa y
-                                        dice saber lo que pasó con ella.
-
-                                    </li>
-                                </ul>
-                            </div>
-                            <button type="button" class="btn btn-light">Comprar</button>
-                        </span>
-
-                        <button class="readMore_btn " id="readMore_btn ">Ver Más</button>
+                        <h5 class="text-light">Precio: <span>$</span> <span class="precio"> 2500</span></h5>
+                        <div class="d-grid gap-2">
+                            <button class="readMore_btn ">Comprar</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!--proximos estrenos-->
-            <h2 class="tituloPrincipal">Próximos estrenos</h2>
+            <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 contenedorIndex" style="background-color: transparent"
+                    style="width: 20rem;">
 
-            <div class="cartelera2">
-                <div class="fila4a5">
-                    <div><img src="./img/proximamente1.jpg" class="cartelera">
-                        <p class="tituloProx">Un crimen Argentino</p>
-                        <p class="fecha">28/08/2022</p>
+                    <img src="./img/pelicula15.jpg" class="movie cartelera " alt="La ciudad perdida">
+                    <h5 class="card-title pt-2 text-center text-light ">La habitación del horror
+                    </h5>
+                    <div class="card-body">
 
-                    </div>
-                    <div><img src="./img/proximamente2.jpg" class="cartelera">
-                        <P class="tituloProx">After amor infinito</P>
-                        <p class="fecha">25/08/2022</p>
-                        <h5 id="proximamente"></h5>
-                    </div>
-                    <div><img src="./img/proximamente3.jpg" class="cartelera">
-                        <P class="tituloProx">Elvis</P>
-                        <p class="fecha">01/09/2022</p>
-
-                    </div>
-                    <div><img src="./img/proximamente4.jpg" class="cartelera">
-                        <P class="tituloProx">La chica salvaje</P>
-                        <p class="fecha">01/09/2022</p>
-
-                    </div>
-                    <div><img src="./img/proximamente5.jpg" class="cartelera">
-                        <P class="tituloProx">La huerfana: El origen</P>
-                        <p class="fecha">08/09/2022</p>
-
+                        <h5 class="text-light">Precio: <span>$</span> <span class="precio"> 2500</span></h5>
+                        <div class="d-grid gap-2">
+                            <button class="readMore_btn ">Comprar</button>
+                        </div>
                     </div>
                 </div>
-
-                <div class="fila4a5">
-                    <div><img src="./img/proximamente6.jpg" class="cartelera">
-                        <P class="tituloProx">Bestia</P>
-                        <p class="fecha">11/08/2022</p>
-                    </div>
-                    <div><img src="./img/proximamente7.jpg" class="cartelera">
-                        <P class="tituloProx">Avatar, el camino del agua</P>
-                        <p class="fecha">15/12/2022</p>
-                    </div>
-                    <div><img src="./img/proximamente8.jpg" class="cartelera">
-                        <P class="tituloProx">La luz del diablo</P>
-                        <p class="fecha">27/10/2022</p>
-                    </div>
-                    <div><img src="./img/proximamente9.jpg" class="cartelera">
-                        <P class="tituloProx">Black Adam</P>
-                        <p class="fecha">20/10/2022</p>
-                    </div>
-                    <div><img src="./img/proximamente10.jpg" class="cartelera">
-                        <P class="tituloProx">Visita por última vez</P>
-                        <p class="fecha">01/09/2022</p>
-                    </div>
-                </div>
+            </div>-->
+        </div>
+    </div>
 
 
-            </div>
+    <table class="table  table-hover table-bordered border-dark " style="background-color:  #46362be0">
+        <thead>
+            <tr class="text-light text-center ">
+                <th scope="col">#</th>
+                <th scope="col ">Pelicula</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad de entradas</th>
+            </tr>
+        </thead>
+
+        <tbody class="tbody">
+
+
+
+        </tbody>
+
+    </table>
+
+    <div class="row mx-4">
+        <div class="col ">
+            <h3 class="itemCartTotal text-white text-center " style="background-color: #1a1614f6">Total: <span
+                    class="precioCambiar">0</span></h3>
+        </div>
+        <div class="col d-flex justify-content-end">
+            <button class="readMore_btn vaciarCarrito ">Eliminar Compra</button>
+            <button class="readMore_btn">Comprar</button>
 
         </div>
-        <div>
-            <footer>
+    </div>
 
-            </footer>
+    <!--proximos estrenos-->
+
+
+    <div class="cartelera2">
+        <h2 class="tituloPrincipal">Próximos estrenos</h2>
+
+        <div class="fila4a5">
+            <div><img src="./img/proximamente1.jpg" class="cartelera">
+                <p class="tituloProx">Un crimen Argentino</p>
+                <p class="fecha">28/08/2022</p>
+
+            </div>
+            <div>
+                <img src="./img/proximamente2.jpg" class="cartelera">
+                <P class="tituloProx">After amor infinito</P>
+                <p class="fecha">25/08/2022</p>
+                <h5 id="proximamente"></h5>
+            </div>
+            <div><img src="./img/proximamente3.jpg" class="cartelera">
+                <P class="tituloProx">Elvis</P>
+                <p class="fecha">01/09/2022</p>
+
+            </div>
+            <div><img src="./img/proximamente4.jpg" class="cartelera">
+                <P class="tituloProx">La chica salvaje</P>
+                <p class="fecha">01/09/2022</p>
+
+            </div>
+            <div><img src="./img/proximamente5.jpg" class="cartelera">
+                <P class="tituloProx">La huerfana: El origen</P>
+                <p class="fecha">08/09/2022</p>
+
+            </div>
         </div>
-        <script src="./js/index.js"></script>
-        <script src="./js/script.js"></script>
+
+        <div class="fila4a5">
+            <div><img src="./img/proximamente6.jpg" class="cartelera">
+                <P class="tituloProx">Bestia</P>
+                <p class="fecha">11/08/2022</p>
+            </div>
+            <div><img src="./img/proximamente7.jpg" class="cartelera">
+                <P class="tituloProx">Avatar, el camino del agua</P>
+                <p class="fecha">15/12/2022</p>
+            </div>
+            <div><img src="./img/proximamente8.jpg" class="cartelera">
+                <P class="tituloProx">La luz del diablo</P>
+                <p class="fecha">27/10/2022</p>
+            </div>
+            <div><img src="./img/proximamente9.jpg" class="cartelera">
+                <P class="tituloProx">Black Adam</P>
+                <p class="fecha">20/10/2022</p>
+            </div>
+            <div><img src="./img/proximamente10.jpg" class="cartelera">
+                <P class="tituloProx">Visita por última vez</P>
+                <p class="fecha">01/09/2022</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+    <div>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <script src="./js/index.js"></script>
+    <script src="./js/peliculas.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
