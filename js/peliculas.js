@@ -108,7 +108,6 @@ let peliculasCartelera = [{
     },
 ]
 
-//codigo de prueba
 
 const agregarBtn = document.querySelectorAll('.readMore_btn ');
 let carrito = [];
@@ -202,7 +201,6 @@ function removerItemCarrito(e) {
 
     const titulo = tr.querySelector('.title').textContent;
     for (let index = 0; index < carrito.length; index++) {
-
         if (carrito[index].titulo.trim() === titulo.trim()) {
             carrito.splice(index, 1)
         }
@@ -213,22 +211,30 @@ function removerItemCarrito(e) {
 
 }
 
+
 function sumarCantidad(e) {
     const sumaInput = e.target;
     const tr = sumaInput.closest('.itemCarrito');
     const titulo = tr.querySelector('.title').textContent;
     carrito.forEach(item => {
         if (item.titulo.trim() === titulo) {
-            if (sumaInput.value < 1) {
-                sumaInput = 1;
-            } else {
-                item.cantidad = sumaInput.value;
-                carritoTotal();
+            sumaInput.value < 1 ? sumaInput = 1 : item.cantidad = sumaInput.value;
+            carritoTotal(); //aca use el operador ternario
 
-            }
         }
     })
 }
+
+//no lo borro por las dudas
+/*
+if (sumaInput.value < 1) {
+    sumaInput = 1;
+} else {
+    item.cantidad = sumaInput.value;
+    carritoTotal();
+}
+*/
+
 
 function addLocalStorage() {
     localStorage.setItem('carrito', JSON.stringify(carrito))
@@ -240,11 +246,11 @@ window.onload = function () {
         carrito = storage;
         crearCarrito();
     }
+
 }
 
 
-
-btnVaciar.addEventListener('click',()=>{
+btnVaciar.addEventListener('click', () => {
     tr = document.querySelectorAll("tr");
     carrito = [];
     tbody.innerHTML = '';

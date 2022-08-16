@@ -1,22 +1,24 @@
 //codigo de login
 
-const $btnSignIn= document.querySelector('.sign-in-btn'),
-      $btnSignUp = document.querySelector('.sign-up-btn'),
-      $signUp = document.querySelector('.sign-up'),
-      $signIn  = document.querySelector('.sign-in');
+const $btnSignIn = document.querySelector('.sign-in-btn'),
+    $btnSignUp = document.querySelector('.sign-up-btn'),
+    $signUp = document.querySelector('.sign-up'),
+    $signIn = document.querySelector('.sign-in');
 
 document.addEventListener('click', e => {
     if (e.target === $btnSignIn || e.target === $btnSignUp) {
         $signIn.classList.toggle('active');
         $signUp.classList.toggle('active')
     }
-});
+
+})
+
 
 const username = document.getElementById('username')
 const password = document.getElementById('password')
 const button = document.getElementById('button')
 
-button.addEventListener('click', (e)=>{
+button.addEventListener('click', (e) => {
     e.preventDefault()
     const data = {
         username: username.value,
@@ -32,7 +34,7 @@ const email = document.getElementById('email')
 const contraseña = document.getElementById('contraseña')
 const button2 = document.getElementById('button2')
 
-button2.addEventListener('click', (e)=>{
+button2.addEventListener('click', (e) => {
     e.preventDefault()
     const data = {
         nombre: nombre.value,
@@ -41,4 +43,3 @@ button2.addEventListener('click', (e)=>{
     }
     console.log(data)
 })
-

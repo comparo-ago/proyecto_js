@@ -12,14 +12,5 @@ function intercambiar() {
   let spanTexto = this.parentElement.querySelector('.hideText'); //Acá, el this hace referencia al elemento sobre el cual se está aplicando la función, en este caso, es el boton de ver más
   spanTexto.classList.toggle('showText');
 
-  if (spanTexto.classList.contains('showText')) {
-    this.innerHTML = 'Ver Menos'
-  }
-  else {
-    this.innerHTML = 'Ver Mas'
-  }
+  spanTexto.classList.contains('showText') ? this.innerHTML = 'Ver Menos' : this.innerHTML = 'Ver Mas' //aca aplique el operador ternario
 }
-
-
-
-
