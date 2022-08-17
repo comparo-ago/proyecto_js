@@ -256,3 +256,24 @@ btnVaciar.addEventListener('click', () => {
     tbody.innerHTML = '';
     carritoTotal();
 })
+
+
+//finalizar compra cartel
+
+const fianlizar_compra = document.getElementById('finalizar_compra');
+
+finalizar_compra.onclick = () => {
+    swal.fire({
+        title: '¿Quiere finalizar la compra?',
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Si',
+        denyButtonText: `No`,
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire('Compra confirmada!', '', 'success')
+        } else if (result.isDenied) {
+            Swal.fire('No se guardaron cambios', '', 'error')
+        }
+    })
+}
