@@ -43,3 +43,19 @@ button2.addEventListener('click', (e) => {
     }
     console.log(data)
 })
+
+//verificacion de email
+
+async function verificarEmail(emailSolicitante) {
+    let API = ` https://www.disify.com/api/email/${emailSolicitante}`;
+    const resp = await fetch(API);
+    const dataJson = await resp.json();
+    console.log(dataJson);
+}
+
+const btnRegistrarse = document.querySelector('#button2')
+
+btnRegistrarse.addEventListener("click", ()=>{
+verificarEmail(emailSolicitante);
+})
+

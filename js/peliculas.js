@@ -277,3 +277,5 @@ finalizar_compra.onclick = () => {
         }
     })
 }
+
+
