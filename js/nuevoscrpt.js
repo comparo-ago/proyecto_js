@@ -15,7 +15,7 @@ document.addEventListener('click', e => {
 
 //inicio de sesión
 
-let user = 'Denise'
+let user = 'Flor'
 let contra = 'hola'
 let ingresar = false
 
@@ -43,18 +43,21 @@ btnInicioSesion.addEventListener("click", () => {
     }
     localStorage.setItem("InicioSolicitante", JSON.stringify(InicioSolicitante));
 
-    if (user === ususarioSolicitante) {
+    if ((user === ususarioSolicitante) && ( contra === passwordSolicitante)) {
         Swal.fire({
             icon:'success',
-            title: 'Bienvenido/a ' + ususarioSolicitante + ' a Cine Hits'
-
+            title: 'Bienvenido/a ' + ususarioSolicitante + ' a Cine Hits',
+            showConfirmButton: false,
+            timer: 3000,
         })
         ingresar = true
     } else {
         swal.fire({
             icon: 'error',
             title: 'Acceso denegado',
-            text: 'vuelva a intentarlo'
+            text: 'vuelva a intentarlo',
+            showConfirmButton: false,
+            timer: 3000,
         })
     }
 })
