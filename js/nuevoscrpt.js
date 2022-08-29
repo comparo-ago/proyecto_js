@@ -13,6 +13,11 @@ document.addEventListener('click', e => {
 
 })
 
+//inicio de sesión
+
+let user = 'Denise'
+let contra = 'hola'
+let ingresar = false
 
 const username = document.getElementById('username')
 const password = document.getElementById('password')
@@ -27,7 +32,34 @@ button.addEventListener('click', (e) => {
     console.log(data)
 })
 
+const btnInicioSesion = document.getElementById('button')
 
+btnInicioSesion.addEventListener("click", () => {
+    let ususarioSolicitante = document.getElementById("username").value;
+    let passwordSolicitante = document.getElementById("password").value;
+    const InicioSolicitante = {
+        "password": passwordSolicitante,
+        "username": ususarioSolicitante,
+    }
+    localStorage.setItem("InicioSolicitante", JSON.stringify(InicioSolicitante));
+
+    if (user === ususarioSolicitante) {
+        Swal.fire({
+            icon:'success',
+            title: 'Bienvenido/a ' + ususarioSolicitante + ' a Cine Hits'
+
+        })
+        ingresar = true
+    } else {
+        swal.fire({
+            icon: 'error',
+            title: 'Acceso denegado',
+            text: 'vuelva a intentarlo'
+        })
+    }
+})
+
+//registro
 
 const nombre = document.getElementById('nombre')
 const email = document.getElementById('email')
@@ -44,8 +76,32 @@ button2.addEventListener('click', (e) => {
     console.log(data)
 })
 
-//verificacion de email
+const btnRegistrarse = document.querySelector('#button2')
 
+btnRegistrarse.addEventListener("click", () => {
+    let nombreSolicitante = document.getElementById("nombre").value;
+    let emailSolicitante = document.getElementById("email").value;
+    let contraseñaSolicitante = document.getElementById("contraseña").value;
+    const datosSolicitante = {
+        "nombre": nombreSolicitante,
+        "email": emailSolicitante,
+        "contraseña": contraseñaSolicitante,
+    }
+    localStorage.setItem("datosSolicitante", JSON.stringify(datosSolicitante));
+    Swal.fire({
+        icon: 'success',
+        title: 'Tus datos se registraron correctamente',
+        text: 'Se te enviara un correo electrónico a tu cuenta con la confirmación del registro',
+        showConfirmButton: false,
+        timer: 5000
+    })
+})
+
+
+
+
+//verificacion de email
+/*
 async function verificarEmail(emailSolicitante) {
     let API = ` https://www.disify.com/api/email/${emailSolicitante}`;
     const resp = await fetch(API);
@@ -53,9 +109,10 @@ async function verificarEmail(emailSolicitante) {
     console.log(dataJson);
 }
 
-const btnRegistrarse = document.querySelector('#button2')
+
 
 btnRegistrarse.addEventListener("click", ()=>{
 verificarEmail(emailSolicitante);
 })
 
+*/

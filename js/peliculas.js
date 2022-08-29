@@ -169,7 +169,7 @@ function crearCarrito() {
                 <td class="table__precio text-light pt-3 text-center"><p> $ ${item.precio}</p></td>
                 <td class="table__cantidad pt-3 d-flex justify-content-center ">
                     <input  type="number"min="1" value=${item.cantidad} class="text-center inputElemento">
-                    <button class="delete btn btn-danger"> X </button>
+                    <button class="delete btn btn-light"> X </button>
                 </td>
 
         `
@@ -219,21 +219,12 @@ function sumarCantidad(e) {
     carrito.forEach(item => {
         if (item.titulo.trim() === titulo) {
             sumaInput.value < 1 ? sumaInput = 1 : item.cantidad = sumaInput.value;
-            carritoTotal(); //aca use el operador ternario
+            carritoTotal();
 
         }
     })
 }
 
-//no lo borro por las dudas
-/*
-if (sumaInput.value < 1) {
-    sumaInput = 1;
-} else {
-    item.cantidad = sumaInput.value;
-    carritoTotal();
-}
-*/
 
 
 function addLocalStorage() {
@@ -272,10 +263,9 @@ finalizar_compra.onclick = () => {
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire('Compra confirmada!', '', 'success')
-        } else if (result.isDenied) {
+          } else if (result.isDenied) {
             Swal.fire('No se guardaron cambios', '', 'error')
-        }
-    })
-}
-
+          }
+        })
+ }
 
