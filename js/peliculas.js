@@ -251,9 +251,9 @@ btnVaciar.addEventListener('click', () => {
 
 //finalizar compra cartel
 
-const fianlizar_compra = document.getElementById('finalizar_compra');
+const finalizar_compra = document.getElementById('finalizar_compra');
 
-finalizar_compra.onclick = () => {
+finalizar_compra.onclick= () => {
     swal.fire({
         title: '¿Quiere finalizar la compra?',
         showDenyButton: true,

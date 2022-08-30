@@ -103,21 +103,21 @@ if (ingresar) {
 
 }
 
-//let cantidadDeEntradas = prompt('Por favor ingrese la cantidad de entradas que desea comprar')
+let cantidadDeEntradas = prompt('Por favor ingrese la cantidad de entradas que desea comprar')
 
 //calculo
 
-//let total = precioEntrada * cantidadDeEntradas;
+let total = precioEntrada * cantidadDeEntradas;
 //alert('El monto total es de ' + total);
 
 
 
 
 
-/*
+
 let totalConDescuento = total / 2;
 alert('Por ser un dia de descuento su entrada sera de ' + totalConDescuento)
-*/
+
 
 //codigo de prueba
 //let precioDescuento = (precioEntrada - descuento) * cantidadDeEntradas
@@ -125,7 +125,7 @@ alert('Por ser un dia de descuento su entrada sera de ' + totalConDescuento)
 //continuar o finalizar compra
 
 
-//let cuponDescuento = prompt('¿Tiene algun cupon de descuento?: \n1 - si. : \n2 - no.')
+let cuponDescuento = prompt('¿Tiene algun cupon de descuento?: \n1 - si. : \n2 - no.')
 continuar = true
 switch (cuponDescuento) {
     case '1':
